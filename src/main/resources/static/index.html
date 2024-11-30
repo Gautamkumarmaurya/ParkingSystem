@@ -1,0 +1,130 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Parking Management System</title>-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">-->
+<!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">-->
+<!--    <link rel="stylesheet" href="css/styles.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash; Sidebar &ndash;&gt;-->
+<!--<div class="d-flex" id="wrapper">-->
+<!--    <div class="bg-dark text-white" id="sidebar">-->
+<!--        <div class="sidebar-header">-->
+<!--            <h3>Parking Management</h3>-->
+<!--            <button class="btn btn-dark" id="toggleBtn">-->
+<!--                <i class="fas fa-bars"></i>-->
+<!--            </button>-->
+<!--        </div>-->
+<!--        <ul class="list-group list-group-flush">-->
+<!--            <li class="list-group-item bg-dark text-white" id="homeMenu" data-bs-toggle="collapse" data-bs-target="#homeMenuContent">-->
+<!--                <a href="#">Home</a>-->
+<!--            </li>-->
+<!--            <div class="collapse" id="homeMenuContent">-->
+<!--                <ul class="list-group">-->
+<!--                    <li><a href="#" class="list-group-item">Welcome</a></li>-->
+<!--                    <li><a href="#" class="list-group-item">Usage</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <li class="list-group-item bg-dark text-white" data-bs-toggle="collapse" data-bs-target="#parkingMenuContent">-->
+<!--                <a href="#">Parking</a>-->
+<!--            </li>-->
+<!--            <div class="collapse" id="parkingMenuContent">-->
+<!--                <ul class="list-group">-->
+<!--                    <li><a href="#" class="list-group-item" id="viewAvailableSpaces">View Available Spaces</a></li>-->
+<!--                    <li><a href="#" class="list-group-item" id="parkVehicle">Park Vehicle</a></li>-->
+<!--                    <li><a href="#" class="list-group-item" id="releaseVehicle">Release Vehicle</a></li>-->
+<!--                    <li><a href="#" class="list-group-item" id="viewHistory">History</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--        </ul>-->
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Main Content &ndash;&gt;-->
+<!--    <div id="main-content" class="container-fluid">-->
+<!--        <div class="row">-->
+<!--            <div class="col-12">-->
+<!--                <div class="container mt-4">-->
+<!--                    <h2>Welcome to Parking Management System</h2>-->
+<!--                    <p id="usageMessage">Manage your vehicle parking easily!</p>-->
+
+<!--                    &lt;!&ndash; Tabular Data Section &ndash;&gt;-->
+<!--                    <div id="dataTable" class="mt-3"></div>-->
+
+<!--                    &lt;!&ndash; Park Vehicle Form &ndash;&gt;-->
+<!--                    <div id="parkVehicleForm" class="mt-3" style="display:none;">-->
+<!--                        <h3>Park a Vehicle</h3>-->
+<!--                        <form id="parkForm">-->
+<!--                            <div class="form-group">-->
+<!--                                <label for="registrationNumber">Registration Number:</label>-->
+<!--                                <input type="text" class="form-control" id="registrationNumber" required>-->
+<!--                            </div>-->
+
+<!--                            <div class="form-group">-->
+<!--                                <label for="ownerName">Owner Name:</label>-->
+<!--                                <input type="text" class="form-control" id="ownerName" required>-->
+<!--                            </div>-->
+
+<!--                            <div class="form-group">-->
+<!--                                <label for="phoneNumber">Phone Number:</label>-->
+<!--                                <input type="text" class="form-control" id="phoneNumber" required>-->
+<!--                            </div>-->
+
+<!--                            <div class="form-group">-->
+<!--                                <label for="vehicleType">Select Vehicle Type:</label>-->
+<!--                                <select class="form-control" id="vehicleType" required>-->
+<!--                                    <option value="car">Car</option>-->
+<!--                                    <option value="motorcycle">Motorcycle</option>-->
+<!--                                    <option value="van">Van</option>-->
+<!--                                    <option value="bus">Bus</option>-->
+<!--                                </select>-->
+<!--                            </div>-->
+
+<!--                            <div class="form-group">-->
+<!--                                <label for="slot">Select Parking Slot:</label>-->
+<!--                                <select class="form-control" id="slot" required></select>-->
+<!--                            </div>-->
+
+<!--                            <div class="form-group">-->
+<!--                                <label for="zone">Select Zone:</label>-->
+<!--                                <select class="form-control" id="zone" required></select>-->
+<!--                            </div>-->
+
+<!--                            <button type="submit" class="btn btn-primary mt-3">Park Vehicle</button>-->
+<!--                        </form>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash; Release Vehicle Form &ndash;&gt;-->
+<!--                    <div id="releaseVehicleForm" class="mt-3" style="display:none;">-->
+<!--                        <h3>Release Vehicle</h3>-->
+<!--                        <p>Are you sure you want to release this vehicle?</p>-->
+<!--                        <button id="confirmExit" class="btn btn-danger">Yes, Release</button>-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash; History &ndash;&gt;-->
+<!--                    <div id="history" class="mt-3" style="display:none;">-->
+<!--                        <h3>Parking History</h3>-->
+<!--                        <table id="historyTable" class="table table-bordered">-->
+<!--                            <thead>-->
+<!--                            <tr>-->
+<!--                                <th>Vehicle Type</th>-->
+<!--                                <th>Slot</th>-->
+<!--                                <th>Zone</th>-->
+<!--                                <th>Status</th>-->
+<!--                            </tr>-->
+<!--                            </thead>-->
+<!--                            <tbody></tbody>-->
+<!--                        </table>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>-->
+<!--<script src="js/script.js"></script>-->
+<!--</body>-->
+<!--</html>-->
